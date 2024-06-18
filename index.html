@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+     <!-- MAIN CONTAINER -->
+    <div id="todo-app-container">
+        <h1 class="todo-title">Checklist</h1>
+    <div class="box-container-main">
+
+        <!-- TODAY CONTAINER -->
+        <div class="box-container box--container--today">
+        <h3 class="box-title box--title--today">Today</h3>
+        <div class="box today--box">
+            <ul>
+                <li>
+                    <div class="item item--name">This is a long item name to see spacing</div><div class="item item--date">06/16/2024</div>
+                    <div class="item item--importance">Urgent</div><div class="item item--edit"><button class="edit">edit</button></div>
+                </li>
+                <li>
+                    <div class="item item--name">Item Name</div><div class="item item--date">Item Date</div>
+                    <div class="item item--importance">Urgent</div><div class="item item--edit"><button class="edit">edit</button></div>
+                </li>
+                <li>
+                    <div class="item item--name">Item Name</div><div class="item item--date">Item Date</div>
+                    <div class="item item--importance">Urgent</div><div class="item item--edit"><button class="edit">Edit</button></div>
+                </li>
+            </ul>
+           <div class="add-item-today-container"><button class="add-item-today-button">Add Item</button></div>
+        </div>  
+        </div>
+
+
+        <!-- TO DO CONTAINER --> 
+        <div class="box-container box--container--queue">
+        <h3 class="box-title box--title--queue">Queue</h3>
+        <div class="box queue--box">
+            <ul>
+                <li>
+                    <div class="item item--name">This is a long item name to see spacing</div><div class="item item--date">06/16/2024</div>
+                    <div class="item item--importance">Urgent</div><div class="item item--edit"><button class="edit">edit</button></div>
+                </li>
+                <li>
+                    <div class="item item--name">Item Name</div><div class="item item--date">Item Date</div>
+                    <div class="item item--importance">Urgent</div><div class="item item--edit"><button class="edit">edit</button></div>
+                </li>
+                <li>
+                    <div class="item item--name">Item Name</div><div class="item item--date">Item Date</div>
+                    <div class="item item--importance">Urgent</div><div class="item item--edit"><button class="edit">Edit</button></div>
+                </li>
+            </ul>
+            <div class="add-item-today-container"><button class="add-item-today-button">Add Item</button></div>
+        </div>
+        </div>
+
+        
+        <!-- DONE CONTAINER -->
+        <div class="box-container box--container--done">
+        <h3 class="box-title box--title--done">Done</h3>
+        <div class="box done--box">
+            <ul class="#display-data-done-main">
+               <li class=".display-data-done"></li>
+            </ul>
+        </div> 
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lucida Handwriting', cursive; 
+}
+
+#todo-app-container{
+ width:100%;
+ background:linear-gradient(to top, #09203f 0%, #537895 100%);
+ padding:10px;
+}
+
+.todo-title{
+    margin-top:100px;
+    text-align:center;
+    color:white;
+}
+
+.box-container-main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:100%;
+    min-height:100vh;
+    margin-top:100px;
+    padding-left:250px;
+    padding-right:250px;
+}
+
+.box-container{
+    width:700px;
+    height: 300px;
+}
+
+.box-title{
+    color:white;
+    text-align:center;
+}
+
+.box{
+    margin-top:20px;
+    height:100%;
+    background:white;
+    padding: 40px 30px;
+    border-radius:10px;
+}
+
+
+ul{
+    border-top:1px solid black;
+}
+
+
+ul li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
+
+li .item--name{
+    width:40%;
+}
+
+li .item--date{
+    margin-left:20px;
+    width:20%;
+}
+
+li .item--importance{
+    margin-left:20px;
+    max-height:25px;
+    border:1px solid black;
+    border-radius:10px;
+    background:red;
+    text-align:center;
+    width:20%;
+}
+
+li .item--action{
+    margin-left:20px;
+    align-self:flex-end;
+}
+
+.edit{
+    border-radius:10px;
+    width:50px;
+    margin-left:20px;
+}
+
+
+.add-item-today-container{
+    display: flex;
+    height:40%;
+    justify-content: center ;
+}
+
+.add-item-today-button{
+   height:30px;
+   width:20%;
+   align-self:flex-end;
+   border-radius:10px;
+}

@@ -1,0 +1,24 @@
+
+[
+{
+    "task": "Take out the trash",
+    "due": "06/20/2024",
+    "importance": "moderate",
+    "queue": "To Do",
+    "notes": "collectors come at 5am"
+},
+{
+    "task": "Work Out",
+    "due": "06/17/24",
+    "importance": "Daily",
+    "queue": "Today",
+    "notes": "3 mile run"
+},
+{
+    "task": "Pay Bills",
+    "due": "06/17/24",
+    "importance": "urgent",
+    "queue": "Done",
+    "notes": "Electric, Gas, Car Insurance"
+}
+]
