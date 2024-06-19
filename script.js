@@ -6,8 +6,8 @@ const display = document.querySelector("#display-data-done-main");
 const getData = () =>{
   fetch('./user.json')
   .then(res => res.json())
-  .then(data=>{;
-    console.log(data);
+  .then(data=>{
+ 
    return data;
   })
 }
@@ -31,4 +31,6 @@ const displayData = () =>{
   display.innerHTML = dataDisplay;
 }
 
+
 displayData();
+
