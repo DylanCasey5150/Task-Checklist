@@ -1,10 +1,10 @@
-const display = document.querySelector("#display-data-done-main");
+const display = document.querySelector(".display-data-done-main");
 
 /* FETCH JSON DATA */
 
 
 const getData = () =>{
-  fetch('./user.json')
+  return fetch('./user.json')
   .then(res => res.json())
   .then(data=>{;
     console.log(data);
@@ -12,8 +12,8 @@ const getData = () =>{
   })
 }
 
-const displayData = () =>{
-  const payload = getData();
+const displayData = async () =>{
+  const payload = await getData();
   console.log(payload);
  
   
@@ -22,8 +22,8 @@ const displayData = () =>{
 
   return `
   <li>
-  <div class="item item--name">{task}</div>
-  <div class="item item--date">{due}</div>
+  <div class="item item--name">${task}</div>
+  <div class="item item--date">${due}</div>
   </li>
   `
   });
