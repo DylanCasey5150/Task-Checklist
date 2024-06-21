@@ -64,12 +64,12 @@ ul li{
 }
 
 li .item--name{
-    width:40%;
+    width:15%;
 }
 
 li .item--date{
     margin-left:20px;
-    width:20%;
+    width:15%;
 }
 
 li .item--importance{
@@ -79,7 +79,7 @@ li .item--importance{
     border-radius:10px;
     background:red;
     text-align:center;
-    width:20%;
+    width:15%;
 }
 
 li .item--action{
@@ -87,11 +87,13 @@ li .item--action{
     align-self:flex-end;
 }
 
-.edit{
-    border-radius:10px;
-    width:50px;
+.edit-item-button{
+    height:30px;
+    width:15%;
     margin-left:20px;
-}
+    align-self:center;
+    border-radius:10px;
+ }
 
 
 .add-item-today-container{
@@ -102,7 +104,17 @@ li .item--action{
 
 .add-item-today-button{
    height:30px;
-   width:20%;
-   align-self:flex-end;
+   width:15%;
+   margin-left:20px;
+   align-self:center;
    border-radius:10px;
 }
+
+.edit-item-button{
+    height:30px;
+    width:15%;
+    margin-left:20px;
+    align-self:center;
+    border-radius:10px;
+ }
+
