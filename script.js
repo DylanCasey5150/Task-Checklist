@@ -5,27 +5,16 @@ const displayDone = document.querySelector(".display-data-done-main");
 /* FETCH JSON DATA */
 
 
-const getData = () =>{
+const getData = () => {
   return fetch('./user.json')
-  .then(res => res.json())
-  .then(data=>{
- 
-   return data;
-  })
+    .then(res => res.json())
+    .then(data => {
+      return data;
+    })
 }
 
 
-/* DISPLAY TODAY DATA*/ 
-const displayTodayData = async () =>{
-  const payload = await getData();
-  console.log(payload);
- 
-  
-  let dataDisplay = payload.map((object) => {
-   const { task, due, importance, queue, notes } = object;
-
-   if(object.queue === "Today"){
-
+const getHTMLFromTodoItem = ({ task, due, importance, notes }) => {
   return `
   <li>
   <div class="item item--name">${task}</div>
@@ -36,86 +25,24 @@ const displayTodayData = async () =>{
   </li>
   `
 }
-  });
 
-
-
-  displayToday.innerHTML = dataDisplay;
-}
-
-displayTodayData();
-
-
-
-
-
-
-/* DISPLAY TODO DATA */
-const displayTodoData = async () =>{
+const renderTodoListItemsToScreen = async() =>{
   const payload = await getData();
-  console.log(payload);
- 
   
-  let dataDisplay = payload.map((object) => {
-   const { task, due, importance, queue, notes } = object;
-
-   if(object.queue === "Todo"){
-
-  return `
-  <li>
-  <div class="item item--name">${task}</div>
-  <div class="item item--date">${due}</div>
-  <div class="item item--date">${importance}</div>
-  <div class="item item--date">${notes}</div>
-  <button class="edit-item-button">Edit</button>
-  </li>
-  `
-}
-  });
-
-
-
-  displayTodo.innerHTML = dataDisplay;
-}
-
-displayTodoData();
-
-
-
-
-
-
-
-
-
-
-
-/* DISPLAY DONE DATA*/
-const displayData = async () =>{
-  const payload = await getData();
-  console.log(payload);
- 
+  const checkListItemsForToday = payload.filter(item => item.queue === "Today").map(item => getHTMLFromTodoItem(item)).join('');
+  displayToday.innerHTML = checkListItemsForToday;
   
-  let dataDisplay = payload.map((object) => {
-   const { task, due, importance, notes } = object;
+  const checkListItemsForTodo = payload.filter(item => item.queue === "Todo").map(item => getHTMLFromTodoItem(item)).join('');
+  displayTodo.innerHTML = checkListItemsForTodo;
 
-   if(object.queue === "Done"){
+  const checkListItemsForDone = payload.filter(item=> item.queue === "Done").map(item => getHTMLFromTodoItem(item)).join('');
+  displayDone.innerHTML = checkListItemsForTodo;
 
-  return `
-  <li>
-  <div class="item item--name">${task}</div>
-  <div class="item item--date">${due}</div>
-  <div class="item item--date">${importance}</div>
-  <div class="item item--date">${notes}</div>
-  <button class="edit-item-button">Edit</button>
-  </li>
-  `
-   }
-  });
-
-  displayDone.innerHTML = dataDisplay;
 }
 
+renderTodoListItemsToScreen();
 
-displayData();
+
+
+
 
