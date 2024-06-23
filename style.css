@@ -31,7 +31,7 @@
 
 .box-container{
     width:700px;
-    height: 300px;
+    height:350px; 
 }
 
 .box-title{
@@ -116,5 +116,11 @@ li .item--action{
     margin-left:20px;
     align-self:center;
     border-radius:10px;
+ }
+
+ /*ADD ITEM TODAY FORM*/
+
+ input{
+    width:15%;
  }
 
