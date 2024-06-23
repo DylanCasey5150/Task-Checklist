@@ -1,46 +1,32 @@
-
-[
 {
-    "task": "Take out the trash",
-    "due": "09/20/2024",
-    "importance": "moderate",
-    "queue": "Todo",
-    "notes": "collectors come at 5am"
-},
-{
-    "task": "Work Out",
-    "due": "n/a",
-    "importance": "Daily",
-    "queue": "Today",
-    "notes": "3 mile run"
-},
-{
-    "task": "Pay Bills",
-    "due": "06/17/24",
-    "importance": "urgent",
-    "queue": "Done",
-    "notes": "Electric, Gas, Car Insurance"
-},
-{
-    "task": "Study for CAPM",
-    "due": "n/a",
-    "importance": "daily",
-    "queue": "Today",
-    "notes": "Chapter 4"
-},
-{
-    "task": "Band Practice",
-    "due": "07/05/24",
-    "importance": "moderate",
-    "queue": "Todo",
-    "notes": "Bring extra guitar picks"
-},
-{
-    "task": "Temple Classes",
-    "due": "11/05/24",
-    "importance": "urgent",
-    "queue": "Today",
-    "notes": "Schedule night classes"
+  "tasks": [
+    {
+      "task": "Take out the trash",
+      "due": "09/20/2024",
+      "importance": "moderate",
+      "queue": "Todo",
+      "notes": "collectors come at 5am"
+    },
+    {
+      "task": "Pay Bills",
+      "due": "06/17/24",
+      "importance": "urgent",
+      "queue": "Done",
+      "notes": "Electric, Gas, Car Insurance"
+    },
+    {
+      "task": "Study for CAPM",
+      "due": "n/a",
+      "importance": "daily",
+      "queue": "Today",
+      "notes": "Chapter 4"
+    },
+    {
+      "task": "Band Practice",
+      "due": "07/05/24",
+      "importance": "moderate",
+      "queue": "Todo",
+      "notes": "Bring extra guitar picks"
+    }
+  ]
 }
-
-]
