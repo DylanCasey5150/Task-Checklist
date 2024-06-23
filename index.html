@@ -17,8 +17,23 @@
         <h3 class="box-title box--title--today">Today</h3>
         <div class="box today--box">
             <ul class="display-data-today-main">
-                <li class="display-data-today">
-            </li>
+            </ul>
+            <div class="add-item-today-form-container">
+            <form class="add-item-form">
+                <input name="task" type="text" placeholder="Add Task"></input>
+                <input name="due" type="date" placeholder="today-date"></input>
+                <input name="importance" type="text" placeholder="Add Importance"></input>
+                <!-- <input name="queue" type="text" value="Today"></input> -->
+               <input type="text" name="queue" list="queue-list" placeholder="Select Queue">
+               <datalist id="queue-list">
+                <option value="Today" type="text">
+                <option value="Todo" type="text">
+                <option value="Done" type="text">
+               </datalist>
+                <input name="notes" type="text" placeholder="Add Notes"></input>
+                <input type="submit" value="Submit">
+            </form>
+            </div>
            <div class="add-item-today-container"><button class="add-item-today-button">Add Item</button></div>
         </div>  
         </div>
@@ -31,10 +46,8 @@
             <ul class="display-data-todo-main">
                 <li class="display-data-todo">
             </li>
-            </ul>
-                
-             
-        
+        </ul>
+       
         </div>
         </div>
 
@@ -45,11 +58,12 @@
         <div class="box done--box">
             <ul class="display-data-done-main">
                <li class="display-data-done"></li> 
-               
             </ul>
         </div> 
         </div>
     </div>
+
+
     
     </div>
 
