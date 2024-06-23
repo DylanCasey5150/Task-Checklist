@@ -5,28 +5,40 @@
       "due": "09/20/2024",
       "importance": "moderate",
       "queue": "Todo",
-      "notes": "collectors come at 5am"
+      "notes": "collectors come at 5am",
+      "id": "6f6d"
     },
     {
       "task": "Pay Bills",
       "due": "06/17/24",
       "importance": "urgent",
       "queue": "Done",
-      "notes": "Electric, Gas, Car Insurance"
+      "notes": "Electric, Gas, Car Insurance",
+      "id": "1bf9"
     },
     {
       "task": "Study for CAPM",
       "due": "n/a",
       "importance": "daily",
       "queue": "Today",
-      "notes": "Chapter 4"
+      "notes": "Chapter 4",
+      "id": "a6a3"
     },
     {
       "task": "Band Practice",
       "due": "07/05/24",
       "importance": "moderate",
       "queue": "Todo",
-      "notes": "Bring extra guitar picks"
+      "notes": "Bring extra guitar picks",
+      "id": "63f3"
+    },
+    {
+      "id": "0c48",
+      "task": "Add first task",
+      "due": "2024-06-24",
+      "importance": "urgent",
+      "queue": "Today",
+      "notes": "Todo post"
     }
   ]
 }

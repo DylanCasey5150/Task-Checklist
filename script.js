@@ -1,6 +1,11 @@
 const displayToday = document.querySelector(".display-data-today-main");
 const displayTodo = document.querySelector(".display-data-todo-main");
 const displayDone = document.querySelector(".display-data-done-main");
+
+//Display Today form
+const displayTodayFormContainer = document.querySelector('.add-item-today-form-container');
+const displayTodayForm = document.querySelector(".add-item-today-button");
+
 //Add Today Form
 const addTaskFormEl = document.querySelector(".add-item-form");
 
@@ -46,13 +51,27 @@ const renderTodoListItemsToScreen = async() =>{
 renderTodoListItemsToScreen();
 
 
+//SHOW ADD ITEM FORM
+
+const displayFormToday = () => {
+  displayTodayFormContainer.style.display = "block";
+  }
+displayTodayForm.addEventListener('click',displayFormToday);
 
 
 
-//ADD ITEM TODAY FORM 
+
+
+
+
+
+
+
+//ADD ITEM TODAY FORM POST REQUEST
 
 
 addTaskFormEl.addEventListener('submit',handleSubmit);
+
 
 function handleSubmit(event){
   event.preventDefault();
@@ -61,6 +80,7 @@ function handleSubmit(event){
   let jsonData = JSON.stringify(data);
   console.log(jsonData);
 
+  
   fetch('http://localhost:3000/tasks', {
     method: 'POST',
     headers :{
@@ -70,5 +90,6 @@ function handleSubmit(event){
 }).then(res => res.json())
 .then(result => console.log(result))
 .catch(err => console.log(err))
+
 }
 

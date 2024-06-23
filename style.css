@@ -95,6 +95,16 @@ li .item--action{
     border-radius:10px;
  }
 
+ 
+ .add-item-today-form-container{
+    display:none;
+ }
+
+ .add-item-todo-form-container{
+    display:none;
+ }
+    
+
 
 .add-item-today-container{
     display: flex;
@@ -109,6 +119,7 @@ li .item--action{
    align-self:center;
    border-radius:10px;
 }
+
 
 .edit-item-button{
     height:30px;
